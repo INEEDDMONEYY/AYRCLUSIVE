@@ -16,6 +16,7 @@ import DashboardShell from "../features/dashboard/components/DashboardShell";
 import DashboardOverviewPage from "../features/dashboard/pages/DashboardOverviewPage";
 import DashboardFleetPage from "../features/dashboard/pages/DashboardFleetPage";
 import RFQsPage from "../features/rfqs/pages/RFQsPage";
+import MessagesPage from "../features/dashboard/pages/MessagesPage";
 import AnalyticsPage from "../features/analytics/pages/AnalyticsPage";
 import SlaPage from "../features/sla/pages/SlaPage";
 import SettingsPage from "../features/settings/pages/SettingsPage";
@@ -69,6 +70,7 @@ export default function App() {
           <Route path="/dashboard" element={<DashboardOverviewPage />} />
           <Route path="/dashboard/rfqs" element={<RFQsPage />} />
           <Route path="/dashboard/fleet" element={<DashboardFleetPage />} />
+          <Route path="/dashboard/messages" element={<MessagesPage />} />
           <Route path="/dashboard/analytics" element={<AnalyticsPage />} />
           <Route path="/dashboard/sla" element={<SlaPage />} />
           <Route path="/dashboard/settings" element={<SettingsPage />} />

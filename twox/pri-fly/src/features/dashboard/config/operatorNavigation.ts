@@ -10,6 +10,7 @@ import {
   Clock,
   Settings,
   Route,
+  MessageSquare,
 } from "lucide-react";
 
 export const operatorNavigation: DashboardNavItem[] = [
@@ -19,6 +20,7 @@ export const operatorNavigation: DashboardNavItem[] = [
   { label: "Fleet", href: "/dashboard/fleet", icon: Plane, permission: PERMISSIONS.AIRCRAFT_VIEW },
   { label: "Availability", href: "/dashboard/availability", icon: CalendarClock, permission: PERMISSIONS.AVAILABILITY_VIEW },
   { label: "Trips", href: "/dashboard/trips", icon: Route, permission: PERMISSIONS.RFQS_VIEW },
+  { label: "Messages", href: "/dashboard/messages", icon: MessageSquare, permission: PERMISSIONS.MESSAGES_VIEW },
   { label: "Analytics", href: "/dashboard/analytics", icon: BarChart3, permission: PERMISSIONS.ANALYTICS_VIEW },
   { label: "SLA", href: "/dashboard/sla", icon: Clock, permission: PERMISSIONS.SLA_VIEW },
   { label: "Settings", href: "/dashboard/settings", icon: Settings, permission: PERMISSIONS.SETTINGS_VIEW },
