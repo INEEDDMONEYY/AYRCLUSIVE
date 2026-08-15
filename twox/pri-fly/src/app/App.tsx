@@ -27,6 +27,7 @@ import BrokerLeaderboardPage from "../features/leaderboard/pages/BrokerLeaderboa
 import OperatorQuotesPage from "../features/dashboard/operator/pages/OperatorQuotesPage";
 import OperatorAvailabilityPage from "../features/dashboard/operator/pages/OperatorAvailabilityPage";
 import OperatorTripsPage from "../features/dashboard/operator/pages/OperatorTripsPage";
+import OperatorFleetDetailPage from "../features/dashboard/operator/pages/OperatorFleetDetailPage";
 
 import WhyAltivoPage from "../features/why-ayrclusive/pages/WhyAltivoPage";
 import WhyAltivoBrokersPage from "../features/why-ayrclusive/pages/WhyAltivoBrokersPage";
@@ -86,6 +87,7 @@ export default function App() {
             <Route path="/dashboard/quotes" element={<OperatorQuotesPage />} />
             <Route path="/dashboard/availability" element={<OperatorAvailabilityPage />} />
             <Route path="/dashboard/trips" element={<OperatorTripsPage />} />
+            <Route path="/dashboard/fleet/:aircraftId" element={<OperatorFleetDetailPage />} />
           </Route>
         </Route>
       </Route>
