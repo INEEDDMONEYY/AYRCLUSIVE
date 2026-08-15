@@ -64,7 +64,7 @@ export default function BookingWidget() {
         </div>
 
         {/* BUTTON */}
-        <button className="mt-1.5 w-full flex items-center justify-center gap-2 rounded-full py-3.5 bg-gradient-to-b from-red-400 to-red-600 text-sm font-semibold text-white shadow-[0_1px_0_rgba(255,255,255,0.4)_inset,0_-4px_8px_rgba(0,0,0,0.15)_inset,0_8px_16px_rgba(56,189,248,0.35)] hover:-translate-y-0.5 active:translate-y-0 transition">
+        <button className="mt-1.5 w-full flex items-center justify-center gap-2 rounded-full py-3.5 bg-gradient-to-b from-red-400 to-red-600 text-sm font-semibold text-white shadow-[0_1px_0_rgba(255,255,255,0.4)_inset,0_-4px_8px_rgba(0,0,0,0.15)_inset,0_8px_16px_rgba(255,255,255,0.35)] hover:-translate-y-0.5 active:translate-y-0 transition">
           <PlaneTakeoff className="w-4 h-4" />
           Request Quotes
         </button>

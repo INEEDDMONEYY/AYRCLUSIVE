@@ -1,0 +1,103 @@
+import type { PricingRole, PricingTier } from "../types";
+
+// Placeholder pricing/perks — to be updated with final numbers and copy.
+export const pricingPlans: Record<PricingRole, PricingTier[]> = {
+  broker: [
+    {
+      name: "Starter",
+      description: "The essentials for an individual broker getting started.",
+      price: "$640",
+      billingPeriod: "month",
+      priceNote: "Billed on a 6 or 12 month term",
+      perks: [
+        { title: "Access to verified operators", included: true },
+        { title: "Quote sourcing platform", included: true },
+        { title: "Standard support response", included: true },
+        { title: "Priority quote matching", included: false },
+        { title: "Dedicated account manager", included: false },
+        { title: "API access", included: false },
+      ],
+    },
+    {
+      name: "Advanced",
+      description: "Our recommended package for active brokerages.",
+      price: "$1,018",
+      billingPeriod: "month",
+      priceNote: "Billed on a 6 or 12 month term",
+      badge: "Most popular",
+      highlighted: true,
+      perks: [
+        { title: "Access to verified operators", included: true },
+        { title: "Quote sourcing platform", included: true },
+        { title: "Standard support response", included: true },
+        { title: "Priority quote matching", included: true },
+        { title: "Dedicated account manager", included: false },
+        { title: "API access", included: false },
+      ],
+    },
+    {
+      name: "Ultimate",
+      description: "Unlocks API access, leads, and a tailor-made web presence.",
+      price: "$2,000",
+      billingPeriod: "month",
+      priceNote: "Billed on a 6 or 12 month term",
+      perks: [
+        { title: "Access to verified operators", included: true },
+        { title: "Quote sourcing platform", included: true },
+        { title: "Standard support response", included: true },
+        { title: "Priority quote matching", included: true },
+        { title: "Dedicated account manager", included: true },
+        { title: "API access", included: true },
+      ],
+    },
+  ],
+  operator: [
+    {
+      name: "Starter",
+      description: "The essentials for an individual operator getting started.",
+      price: "$340",
+      billingPeriod: "month",
+      priceNote: "Billed on a 6 or 12 month term",
+      perks: [
+        { title: "Access to verified brokers", included: true },
+        { title: "Trip opportunity marketplace", included: true },
+        { title: "Standard support response", included: true },
+        { title: "Priority trip matching", included: false },
+        { title: "Dedicated account manager", included: false },
+        { title: "API access", included: false },
+      ],
+    },
+    {
+      name: "Advanced",
+      description: "Our recommended package for growing fleets.",
+      price: "$880",
+      billingPeriod: "month",
+      priceNote: "Billed on a 6 or 12 month term",
+      badge: "Most popular",
+      highlighted: true,
+      perks: [
+        { title: "Access to verified brokers", included: true },
+        { title: "Trip opportunity marketplace", included: true },
+        { title: "Standard support response", included: true },
+        { title: "Priority trip matching", included: true },
+        { title: "Dedicated account manager", included: false },
+        { title: "API access", included: false },
+      ],
+    },
+    {
+      name: "Ultimate",
+      description: "Unlocks API access, leads, and a tailor-made web presence.",
+      price: "$1,450",
+      billingPeriod: "month",
+      priceNote: "Billed on a 6 or 12 month term",
+      perks: [
+        { title: "Access to verified brokers", included: true },
+        { title: "Trip opportunity marketplace", included: true },
+        { title: "Standard support response", included: true },
+        { title: "Priority trip matching", included: true },
+        { title: "Dedicated account manager", included: true },
+        { title: "API access", included: true },
+      ],
+    },
+  ],
+};

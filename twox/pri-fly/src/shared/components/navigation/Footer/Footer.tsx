@@ -10,7 +10,7 @@ export default function Footer() {
           {/* BRAND */}
           <div>
             <h3 className="text-black text-lg font-semibold">
-              Altivo Aviation
+              AYRCLUSIVE Aviation
             </h3>
 
             <p className="mt-3 leading-relaxed text-slate-600">

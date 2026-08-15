@@ -1,0 +1,82 @@
+import type { OperatorRFQ } from "./types";
+
+const minutesAgo = (minutes: number) => new Date(Date.now() - minutes * 60_000).toISOString();
+
+// Sample RFQs until this is wired to the backend RFQ/matching API.
+export const mockOperatorRFQs: OperatorRFQ[] = [
+  {
+    id: "RFQ-1042",
+    brokerName: "Skyline Brokerage",
+    route: "TEB → MIA",
+    departureDate: "Aug 22, 2026",
+    passengerCount: 6,
+    cabinClass: "midsize_jet",
+    notes: "Client prefers an early morning departure if possible.",
+    status: "pending",
+    receivedAt: minutesAgo(12),
+  },
+  {
+    id: "RFQ-1041",
+    brokerName: "Apex Air Charter",
+    route: "VNY → ASE",
+    departureDate: "Aug 19, 2026",
+    passengerCount: 4,
+    cabinClass: "light_jet",
+    notes: "Pet on board, one small dog.",
+    status: "pending",
+    receivedAt: minutesAgo(48),
+  },
+  {
+    id: "RFQ-1038",
+    brokerName: "Meridian Jets",
+    route: "LAS → SFO",
+    departureDate: "Aug 17, 2026",
+    passengerCount: 8,
+    cabinClass: "super_midsize",
+    status: "quoted",
+    receivedAt: minutesAgo(180),
+    quote: {
+      price: 18500,
+      aircraft: "Gulfstream G280 — N418QS",
+      terms: "50% deposit due at booking, balance due 48 hours before departure.",
+      submittedAt: minutesAgo(90),
+    },
+  },
+  {
+    id: "RFQ-1035",
+    brokerName: "Bluewater Aviation",
+    route: "OPF → TEB",
+    departureDate: "Aug 15, 2026",
+    passengerCount: 3,
+    cabinClass: "heavy_jet",
+    status: "accepted",
+    receivedAt: minutesAgo(720),
+    quote: {
+      price: 32750,
+      aircraft: "Challenger 350 — N902BW",
+      terms: "Full payment due at booking. Includes catering and ground transport.",
+      submittedAt: minutesAgo(600),
+    },
+  },
+  {
+    id: "RFQ-1029",
+    brokerName: "Horizon Jet Partners",
+    route: "PBI → JFK",
+    departureDate: "Aug 10, 2026",
+    passengerCount: 2,
+    cabinClass: "very_light_jet",
+    status: "declined",
+    receivedAt: minutesAgo(1440),
+    declineReason: "No available aircraft in this cabin class for the requested date.",
+  },
+  {
+    id: "RFQ-1046",
+    brokerName: "Crestline Charter",
+    route: "DAL → ORD",
+    departureDate: "Aug 25, 2026",
+    passengerCount: 5,
+    cabinClass: "midsize_jet",
+    status: "draft",
+    receivedAt: minutesAgo(3),
+  },
+];

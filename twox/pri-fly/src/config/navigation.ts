@@ -13,11 +13,11 @@ export interface NavLink {
 
 export const navLinks: NavLink[] = [
   {
-    label: "Why Altivo",
-    path: "/why-altivo",
+    label: "Why AYRCLUSIVE",
+    path: "/why-ayrclusive",
     children: [
-      { label: "For Brokers", path: "/why-altivo/brokers" },
-      { label: "For Operators", path: "/why-altivo/operators" },
+      { label: "For Brokers", path: "/why-ayrclusive/brokers" },
+      { label: "For Operators", path: "/why-ayrclusive/operators" },
     ],
   },
   {
@@ -31,11 +31,11 @@ export const navLinks: NavLink[] = [
     ],
   },
   {
-    label: "Join Altivo",
-    path: "/join-altivo",
+    label: "Join AYRCLUSIVE",
+    path: "/join-ayrclusive",
     children: [
-      { label: "As a Broker", path: "/join-altivo/brokers" },
-      { label: "As an Operator", path: "/join-altivo/operators" },
+      { label: "As a Broker", path: "/join-ayrclusive/brokers" },
+      { label: "As an Operator", path: "/join-ayrclusive/operators" },
     ],
   },
   {

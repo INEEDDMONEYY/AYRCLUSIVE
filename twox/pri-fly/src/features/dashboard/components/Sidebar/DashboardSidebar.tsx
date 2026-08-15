@@ -60,7 +60,7 @@ export default function DashboardSidebar({ mobileOpen = false, onCloseMobile }: 
           <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-red-400 to-gray-500">
             <img src={AltivoIcon} alt="Altivo" className="h-5 w-5" />
           </div>
-          {!collapsed && <span className="text-lg font-bold text-[var(--text-primary)]">Altivo</span>}
+          {!collapsed && <span className="text-lg font-bold text-[var(--text-primary)]">AYRCLUSIVE</span>}
           <SidebarCollapse collapsed={collapsed} onToggle={() => setCollapsed((c) => !c)} />
         </div>
 

@@ -8,7 +8,7 @@ export default function NavigationLogo() {
         <img src={AltivoIcon} alt="Altivo Logo" className="w-5 h-5" />
       </div>
       <span className="font-semibold tracking-tight text-white text-[15px]">
-        Altivo
+        AYRCLUSIVE
       </span>
     </Link>
   );
