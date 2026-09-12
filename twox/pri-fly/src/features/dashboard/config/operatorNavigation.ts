@@ -11,6 +11,7 @@ import {
   Settings,
   Route,
   MessageSquare,
+  Trophy,
 } from "lucide-react";
 
 export const operatorNavigation: DashboardNavItem[] = [
@@ -21,6 +22,7 @@ export const operatorNavigation: DashboardNavItem[] = [
   { label: "Availability", href: "/dashboard/availability", icon: CalendarClock, permission: PERMISSIONS.AVAILABILITY_VIEW },
   { label: "Trips", href: "/dashboard/trips", icon: Route, permission: PERMISSIONS.RFQS_VIEW },
   { label: "Messages", href: "/dashboard/messages", icon: MessageSquare, permission: PERMISSIONS.MESSAGES_VIEW },
+  { label: "Leaderboard", href: "/dashboard/leaderboard", icon: Trophy, permission: PERMISSIONS.LEADERBOARD_VIEW },
   { label: "Analytics", href: "/dashboard/analytics", icon: BarChart3, permission: PERMISSIONS.ANALYTICS_VIEW },
   { label: "SLA", href: "/dashboard/sla", icon: Clock, permission: PERMISSIONS.SLA_VIEW },
   { label: "Settings", href: "/dashboard/settings", icon: Settings, permission: PERMISSIONS.SETTINGS_VIEW },
